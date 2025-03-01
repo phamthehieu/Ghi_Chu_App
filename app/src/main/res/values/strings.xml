@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Thu chi app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_chart">Biểu đồ</string>
+    <string name="title_report">Báo cáo</string>
+    <string name="title_me">Tôi</string>
+    <string name="title_add">Thêm mới</string>
+    <string name="title_search">Tìm kiếm</string>
+    <string name="title_SoThuChi">Sổ thu chi</string>
+    <string name="title_calendar">Lịch</string>
+    <string name="title_month">tháng</string>
+    <string name="title_chiphi">Chi phí</string>
+    <string name="title_thuNhap">Thu nhập</string>
+    <string name="title_soDu">Tổng số dư</string>
+    <string name="_0">0</string>
+    <string name="title_canhBaoDangNhap">Sau khi đăng nhập, bạn có thể sao lưu dữ liệu của mình theo thời gian thực!</string>
+    <string name="warning">Cảnh báo</string>
+    <string name="down">down</string>
+    <string name="value_calendar">Thg 6</string>
+    <string name="huy">Huỷ</string>
+    <string name="them">Thêm</string>
+    <string name="calendar">thường xuyên\n</string>
+    <string name="Expense">Chi phí</string>
+    <string name="Income2">Thu thập</string>
+    <string name="Transfer">Chuyển khoản</string>
+    <string name="name_category">tên danh mục</string>
+</resources>

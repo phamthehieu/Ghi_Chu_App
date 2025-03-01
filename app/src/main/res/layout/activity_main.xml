@@ -1,0 +1,55 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/action_keyBoardBottomSheetFragment_to_homeFragment"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        app:fabCradleMargin="8dp"
+        app:fabCradleRoundedCornerRadius="8dp"
+        app:fabAlignmentMode="center"
+        style="@style/BottomAppBarStyle">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        app:labelVisibilityMode="labeled"
+        style="@style/BottomAppBarStyle"
+        app:menu="@menu/bottom_menu_home"
+        app:itemIconTint="@color/icon_text_color_state"
+        app:itemTextColor="@color/icon_text_color_state"
+        app:itemActiveIndicatorStyle="@android:color/transparent"/>
+
+
+</com.google.android.material.bottomappbar.BottomAppBar>
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/addFabBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:backgroundTint="@color/yellow"
+    android:contentDescription="@string/title_add"
+    android:src="@drawable/add"
+    app:layout_anchor="@+id/bottomAppBar"
+    app:layout_anchorGravity="top|center"
+    app:shapeAppearance="@style/styleCircleImage" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

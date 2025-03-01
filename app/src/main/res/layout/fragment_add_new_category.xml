@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.home.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/titleBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/backBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/huy"
+                    android:textSize="20sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/them"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageButton
+                    android:id="@+id/monthlyPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/calendar"
+                    android:padding="10dp"
+                    android:src="@drawable/calendar_time"
+                    app:tint="?attr/colorControlNormal"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/titleSubAAE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleBackground"
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <TextView
+                android:id="@+id/tabExpense"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Expense" />
+
+            <View
+                android:id="@+id/leftView"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tabIncome"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Income2" />
+
+            <View
+                android:id="@+id/rightView"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tabTransfer"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/Transfer" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
+
