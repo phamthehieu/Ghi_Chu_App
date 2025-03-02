@@ -4,9 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.myapplication.view.home.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.myapplication.view.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.myapplication.view.user.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.myapplication.view.repot.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" />
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.incomeandexpenditureapp.view.home.HomeFragment"
+        android:name="com.example.myapplication.view.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -15,40 +38,16 @@
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"/>
-    </fragment>
-    <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.example.incomeandexpenditureapp.view.home.SplashFragment"
-        android:label="SplashFragment" >
-        <action
-            android:id="@+id/action_splashFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            app:popExitAnim="@anim/slide_out_right"
+            />
     </fragment>
     <fragment
         android:id="@+id/chartFragment"
-        android:name="com.example.incomeandexpenditureapp.view.chart.ChartFragment"
+        android:name="com.example.myapplication.view.chart.ChartFragment"
         android:label="fragment_chart"
         tools:layout="@layout/fragment_chart" />
     <fragment
-        android:id="@+id/reportFragment"
-        android:name="com.example.incomeandexpenditureapp.view.repot.ReportFragment"
-        android:label="fragment_report"
-        tools:layout="@layout/fragment_report" />
-    <fragment
-        android:id="@+id/userFragment"
-        android:name="com.example.incomeandexpenditureapp.view.user.UserFragment"
-        android:label="fragment_user"
-        tools:layout="@layout/fragment_user" />
-    <fragment
         android:id="@+id/addNewCategoryFragment"
-        android:name="com.example.incomeandexpenditureapp.view.categories.AddNewCategoryFragment"
-        android:label="fragment_add_new_category"
-        tools:layout="@layout/fragment_add_new_category" />
-
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.incomeandexpenditureapp.view.MainActivity"
-        android:label="MainActivity" />
-
+        android:name="com.example.myapplication.view.categories.AddNewCategoryFragment"
+        android:label="AddNewCategoryFragment" />
 </navigation>

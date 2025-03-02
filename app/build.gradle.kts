@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.incomeandexpenditureapp"
+    namespace = "com.example.myapplication"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.incomeandexpenditureapp"
+        applicationId = "com.example.myapplication"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -29,35 +29,18 @@ android {
         }
     }
 
-    configurations.all {
-        exclude(module = "httpclient")
-    }
-
-    packaging {
-        resources {
-            excludes += mutableSetOf(
-                "META-INF/DEPENDENCIES",
-                "META-INF/LICENSE",
-                "META-INF/LICENSE.txt",
-                "META-INF/license.txt",
-                "META-INF/NOTICE",
-                "META-INF/NOTICE.txt",
-                "META-INF/notice.txt"
-            )
-        }
-    }
-
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
 
     buildFeatures {
         viewBinding = true
     }
+
 }
 
 dependencies {
@@ -83,5 +66,4 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.0")
-
 }
