@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.categories.transfer.AddNewTransferFragment">
+    tools:context=".view.categories.transfer.AddNewTranferFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Thu chi app</string>
+    <string name="app_name">Sổ chi tiêu</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_home">Trang chủ</string>
@@ -26,4 +26,5 @@
     <string name="Income2">Thu thập</string>
     <string name="Transfer">Chuyển khoản</string>
     <string name="name_category">tên danh mục</string>
+    <string name="setting">cài đặt\n</string>
 </resources>
