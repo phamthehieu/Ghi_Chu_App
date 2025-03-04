@@ -63,5 +63,9 @@
         android:name="com.example.incomeandexpenditureapp.view.categories.DirectorySettingsFragment"
         android:label="fragment_directory_settings"
         tools:layout="@layout/fragment_directory_settings" />
+    <fragment
+        android:id="@+id/addNewCategoriesFragment"
+        android:name="com.example.incomeandexpenditureapp.view.categories.AddNewCategoriesFragment"
+        android:label="AddNewCategoriesFragment" />
 
 </navigation>

@@ -27,4 +27,14 @@
     <string name="Transfer">Chuyển khoản</string>
     <string name="name_category">tên danh mục</string>
     <string name="setting">cài đặt\n</string>
+    <string name="setting_category">Cài đặt danh mục</string>
+    <string name="add_category">Thêm danh mục</string>
+    <string name="title_tuyChinh">Tuỳ chỉnh</string>
+    <string name="title_message_delete">Bạn có chắc muốn xoá không?</string>
+    <string name="cancel">Huỷ</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="delete">Huỷ\n</string>
+    <string name="title_edit_text_category">Vui lòng nhập tên danh mục</string>
+    <string name="group_title">group title</string>
+    <string name="title_error_message">Tên danh mục không được để trống!</string>
 </resources>
